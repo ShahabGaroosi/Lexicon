@@ -69,7 +69,14 @@ namespace Assignment_1
         static void Division()
         {
             double a = GetValue(), b = GetValue();
-            Console.WriteLine(a / b);
+            if (b != 0)
+            {
+                Console.WriteLine(a / b);
+            }
+            else
+            {
+                Console.WriteLine("Error: Could not divide by zero!");
+            }
         }
     }
 }
